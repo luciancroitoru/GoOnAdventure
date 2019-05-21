@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.lucian.goonadventure.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wallpaper"
+        android:scaleType="centerCrop"
+     />
+
+    <TextView
+        android:id="@+id/first"
+        style="@style/TextMainStyle"
+        android:text="@string/text1" />
+
+    <TextView
+        android:id="@+id/second"
+        style="@style/TextMainStyle"
+        android:text="@string/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/first" />
+
+    <TextView
+        android:id="@+id/third"
+        style="@style/TextMainStyle"
+        android:text="@string/text3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/second" />
+
+    <TextView
+        style="@style/TextMainStyle"
+        android:text="@string/text4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/third" />
+
+</RelativeLayout>
+
+</ScrollView>
